@@ -1,0 +1,963 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.16.3/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.16.3/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "cmake/os/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"path" : "cmake/build_configurations/compiler_options.cmake"
+		},
+		{
+			"path" : "cmake/build_configurations/feature_set.cmake"
+		},
+		{
+			"path" : "cmake/maintainer.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"path" : "cmake/character_sets.cmake"
+		},
+		{
+			"path" : "cmake/cpu_info.cmake"
+		},
+		{
+			"path" : "cmake/zlib.cmake"
+		},
+		{
+			"path" : "cmake/libevent.cmake"
+		},
+		{
+			"path" : "cmake/ssl.cmake"
+		},
+		{
+			"path" : "cmake/readline.cmake"
+		},
+		{
+			"path" : "cmake/mysql_version.cmake"
+		},
+		{
+			"path" : "VERSION"
+		},
+		{
+			"path" : "cmake/package_name.cmake"
+		},
+		{
+			"path" : "cmake/cpack_source_ignore_files.cmake"
+		},
+		{
+			"path" : "cmake/libutils.cmake"
+		},
+		{
+			"path" : "cmake/cmake_parse_arguments.cmake"
+		},
+		{
+			"path" : "cmake/dtrace.cmake"
+		},
+		{
+			"path" : "cmake/plugin.cmake"
+		},
+		{
+			"path" : "cmake/cmake_parse_arguments.cmake"
+		},
+		{
+			"path" : "cmake/install_macros.cmake"
+		},
+		{
+			"path" : "cmake/cmake_parse_arguments.cmake"
+		},
+		{
+			"path" : "cmake/install_layout.cmake"
+		},
+		{
+			"path" : "cmake/mysql_add_executable.cmake"
+		},
+		{
+			"path" : "cmake/cmake_parse_arguments.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"path" : "configure.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckStructHasMember.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceRuns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCXXSourceRuns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/TestBigEndian.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindCurses.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "cmake/abi_check.cmake"
+		},
+		{
+			"path" : "cmake/tags.cmake"
+		},
+		{
+			"path" : "config.h.cmake"
+		},
+		{
+			"path" : "config.h.cmake"
+		},
+		{
+			"path" : "include/mysql_version.h.in"
+		},
+		{
+			"path" : "sql/sql_builtin.cc.in"
+		},
+		{
+			"path" : "cmake/info_macros.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/info_macros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CPack.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CPackComponent.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Templates/CPackConfig.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Templates/CPackConfig.cmake.in"
+		},
+		{
+			"path" : "zlib/CMakeLists.txt"
+		},
+		{
+			"path" : "extra/yassl/CMakeLists.txt"
+		},
+		{
+			"path" : "extra/yassl/taocrypt/CMakeLists.txt"
+		},
+		{
+			"path" : "cmd-line-utils/libedit/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"path" : "cmd-line-utils/libedit/makelist.sh"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"path" : "libevent/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/archive/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/blackhole/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/csv/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/example/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/federated/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/heap/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/innobase/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CheckCSourceRuns.cmake"
+		},
+		{
+			"path" : "storage/myisam/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/myisammrg/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/ndb/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/perfschema/CMakeLists.txt"
+		},
+		{
+			"path" : "storage/perfschema/unittest/CMakeLists.txt"
+		},
+		{
+			"path" : "plugin/audit_null/CMakeLists.txt"
+		},
+		{
+			"path" : "plugin/auth/CMakeLists.txt"
+		},
+		{
+			"path" : "plugin/daemon_example/CMakeLists.txt"
+		},
+		{
+			"path" : "plugin/fulltext/CMakeLists.txt"
+		},
+		{
+			"path" : "plugin/innodb_memcached/CMakeLists.txt"
+		},
+		{
+			"path" : "plugin/password_validation/CMakeLists.txt"
+		},
+		{
+			"path" : "plugin/semisync/CMakeLists.txt"
+		},
+		{
+			"path" : "include/CMakeLists.txt"
+		},
+		{
+			"path" : "dbug/CMakeLists.txt"
+		},
+		{
+			"path" : "strings/CMakeLists.txt"
+		},
+		{
+			"path" : "vio/CMakeLists.txt"
+		},
+		{
+			"path" : "regex/CMakeLists.txt"
+		},
+		{
+			"path" : "mysys/CMakeLists.txt"
+		},
+		{
+			"path" : "mysys_ssl/CMakeLists.txt"
+		},
+		{
+			"path" : "libmysql/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/merge_archives_unix.cmake.in"
+		},
+		{
+			"path" : "cmake/configurable_file_content.in"
+		},
+		{
+			"path" : "libmysql/libmysql.ver.in"
+		},
+		{
+			"path" : "unittest/CMakeLists.txt"
+		},
+		{
+			"path" : "unittest/examples/CMakeLists.txt"
+		},
+		{
+			"path" : "unittest/mytap/CMakeLists.txt"
+		},
+		{
+			"path" : "unittest/mytap/t/CMakeLists.txt"
+		},
+		{
+			"path" : "unittest/gunit/CMakeLists.txt"
+		},
+		{
+			"path" : "extra/CMakeLists.txt"
+		},
+		{
+			"path" : "client/CMakeLists.txt"
+		},
+		{
+			"path" : "sql/share/CMakeLists.txt"
+		},
+		{
+			"path" : "sql/share/dictionary.txt"
+		},
+		{
+			"path" : "libservices/CMakeLists.txt"
+		},
+		{
+			"path" : "man/CMakeLists.txt"
+		},
+		{
+			"path" : "tests/CMakeLists.txt"
+		},
+		{
+			"path" : "sql/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/bison.cmake"
+		},
+		{
+			"path" : "cmake/make_dist.cmake.in"
+		},
+		{
+			"path" : "libmysqld/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/merge_archives_unix.cmake.in"
+		},
+		{
+			"path" : "libmysqld/examples/CMakeLists.txt"
+		},
+		{
+			"path" : "scripts/CMakeLists.txt"
+		},
+		{
+			"path" : "scripts/mysqlbug.sh"
+		},
+		{
+			"path" : "scripts/mysql_install_db.pl.in"
+		},
+		{
+			"path" : "scripts/mysql_config.pl.in"
+		},
+		{
+			"path" : "scripts/msql2mysql.sh"
+		},
+		{
+			"path" : "scripts/mysql_config.sh"
+		},
+		{
+			"path" : "scripts/mysql_fix_extensions.sh"
+		},
+		{
+			"path" : "scripts/mysql_setpermission.sh"
+		},
+		{
+			"path" : "scripts/mysql_zap.sh"
+		},
+		{
+			"path" : "scripts/mysqlaccess.sh"
+		},
+		{
+			"path" : "scripts/mysqlaccess.conf"
+		},
+		{
+			"path" : "scripts/mysql_convert_table_format.sh"
+		},
+		{
+			"path" : "scripts/mysql_find_rows.sh"
+		},
+		{
+			"path" : "scripts/mysqlhotcopy.sh"
+		},
+		{
+			"path" : "scripts/mysqldumpslow.sh"
+		},
+		{
+			"path" : "scripts/mysqld_multi.sh"
+		},
+		{
+			"path" : "scripts/mysqld_safe.sh"
+		},
+		{
+			"path" : "scripts/mysql_secure_installation.pl.in"
+		},
+		{
+			"path" : "mysql-test/CMakeLists.txt"
+		},
+		{
+			"path" : "mysql-test/mtr.out-of-source"
+		},
+		{
+			"path" : "mysql-test/lib/My/SafeProcess/CMakeLists.txt"
+		},
+		{
+			"path" : "support-files/CMakeLists.txt"
+		},
+		{
+			"path" : "support-files/my-default.cnf.sh"
+		},
+		{
+			"path" : "support-files/mysqld_multi.server.sh"
+		},
+		{
+			"path" : "support-files/mysql-log-rotate.sh"
+		},
+		{
+			"path" : "support-files/binary-configure.sh"
+		},
+		{
+			"path" : "support-files/MySQL-shared-compat.spec.sh"
+		},
+		{
+			"path" : "support-files/mysql.spec.sh"
+		},
+		{
+			"path" : "support-files/mysql.spec.sh"
+		},
+		{
+			"path" : "support-files/MySQL-shared-compat.spec.sh"
+		},
+		{
+			"path" : "support-files/mysql.server.sh"
+		},
+		{
+			"path" : "sql-bench/CMakeLists.txt"
+		},
+		{
+			"path" : "sql-bench/README"
+		},
+		{
+			"path" : "sql-bench/bench-count-distinct.sh"
+		},
+		{
+			"path" : "sql-bench/bench-init.pl.sh"
+		},
+		{
+			"path" : "sql-bench/compare-results.sh"
+		},
+		{
+			"path" : "sql-bench/copy-db.sh"
+		},
+		{
+			"path" : "sql-bench/crash-me.sh"
+		},
+		{
+			"path" : "sql-bench/example.bat"
+		},
+		{
+			"path" : "sql-bench/graph-compare-results.sh"
+		},
+		{
+			"path" : "sql-bench/innotest1.sh"
+		},
+		{
+			"path" : "sql-bench/innotest1a.sh"
+		},
+		{
+			"path" : "sql-bench/innotest1b.sh"
+		},
+		{
+			"path" : "sql-bench/innotest2.sh"
+		},
+		{
+			"path" : "sql-bench/innotest2a.sh"
+		},
+		{
+			"path" : "sql-bench/innotest2b.sh"
+		},
+		{
+			"path" : "sql-bench/pwd.bat"
+		},
+		{
+			"path" : "sql-bench/run-all-tests.sh"
+		},
+		{
+			"path" : "sql-bench/server-cfg.sh"
+		},
+		{
+			"path" : "sql-bench/test-ATIS.sh"
+		},
+		{
+			"path" : "sql-bench/test-alter-table.sh"
+		},
+		{
+			"path" : "sql-bench/test-big-tables.sh"
+		},
+		{
+			"path" : "sql-bench/test-connect.sh"
+		},
+		{
+			"path" : "sql-bench/test-create.sh"
+		},
+		{
+			"path" : "sql-bench/test-insert.sh"
+		},
+		{
+			"path" : "sql-bench/test-select.sh"
+		},
+		{
+			"path" : "sql-bench/test-transactions.sh"
+		},
+		{
+			"path" : "sql-bench/test-wisconsin.sh"
+		},
+		{
+			"path" : "sql-bench/uname.bat"
+		},
+		{
+			"path" : "packaging/rpm-oel/CMakeLists.txt"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysql.spec.in"
+		},
+		{
+			"path" : "packaging/rpm-oel/my.cnf"
+		},
+		{
+			"path" : "packaging/rpm-oel/my_config.h"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysql_config.sh"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysqld.service"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysql-systemd-start"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysql.conf"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysql-5.6.16-mysql-install.patch"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysql.init"
+		},
+		{
+			"path" : "packaging/rpm-oel/filter-requires.sh"
+		},
+		{
+			"path" : "packaging/rpm-oel/filter-provides.sh"
+		},
+		{
+			"path" : "packaging/rpm-oel/mysql-5.6-libmysqlclient-symbols.patch"
+		},
+		{
+			"path" : "packaging/rpm-fedora/CMakeLists.txt"
+		},
+		{
+			"path" : "packaging/rpm-fedora/mysql.spec.in"
+		},
+		{
+			"path" : "packaging/rpm-fedora/my.cnf"
+		},
+		{
+			"path" : "packaging/rpm-fedora/my_config.h"
+		},
+		{
+			"path" : "packaging/rpm-fedora/mysql_config.sh"
+		},
+		{
+			"path" : "packaging/rpm-fedora/mysqld.service"
+		},
+		{
+			"path" : "packaging/rpm-fedora/mysql-systemd-start"
+		},
+		{
+			"path" : "packaging/rpm-fedora/mysql.conf"
+		},
+		{
+			"path" : "packaging/rpm-fedora/mysql-5.6.16-mysql-install.patch"
+		},
+		{
+			"path" : "packaging/rpm-fedora/mysql-5.6-libmysqlclient-symbols.patch"
+		},
+		{
+			"path" : "packaging/WiX/CMakeLists.txt"
+		},
+		{
+			"path" : "packaging/solaris/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/caizhw3/code/mysql-5.6.21/build",
+		"source" : "/home/caizhw3/code/mysql-5.6.21"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

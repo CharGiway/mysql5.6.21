@@ -1,0 +1,236 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "mysys_ssl/libmysys_ssl.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"TARGET_LINK_LIBRARIES",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"mysys_ssl/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 420,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   -DHAVE_YASSL -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED"
+				},
+				{
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "HAVE_CONFIG_H"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/mysys_ssl"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/taocrypt/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "zlib::@036b525f80ea8433013a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "taocrypt::@a96ffe6081e3867cbbc4"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "yassl::@9bb0f2564d716f33c873"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dbug::@f597a2a676edbd8d9eb8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		}
+	],
+	"id" : "mysys_ssl::@f5713d3e6a34ebed922e",
+	"name" : "mysys_ssl",
+	"nameOnDisk" : "libmysys_ssl.a",
+	"paths" : 
+	{
+		"build" : "mysys_ssl",
+		"source" : "mysys_ssl"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/crypt_genhash_impl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_default.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_getopt.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_aes.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_sha1.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_sha2.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_md5.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_rnd.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_murmur3.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "mysys_ssl/my_aes_yassl.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

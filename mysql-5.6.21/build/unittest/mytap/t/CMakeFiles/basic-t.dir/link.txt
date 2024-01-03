@@ -1,0 +1,1 @@
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   CMakeFiles/basic-t.dir/basic-t.c.o  -o basic-t  -lpthread ../libmytap.a ../../../mysys/libmysys.a ../../../dbug/libdbug.a ../../../mysys/libmysys.a ../../../dbug/libdbug.a ../../../strings/libstrings.a ../../../zlib/libzlib.a -lm -lpthread 

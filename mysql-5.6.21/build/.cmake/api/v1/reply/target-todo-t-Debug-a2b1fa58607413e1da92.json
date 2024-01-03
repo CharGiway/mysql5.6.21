@@ -1,0 +1,212 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "unittest/examples/todo-t"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"TARGET_LINK_LIBRARIES",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"unittest/examples/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 420,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "HAVE_CONFIG_H"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/zlib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/sql"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/regex"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/unittest/mytap"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "zlib::@036b525f80ea8433013a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dbug::@f597a2a676edbd8d9eb8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "mytap::@985555b84cdc3806b8a2"
+		}
+	],
+	"id" : "todo-t::@c746f6ab048e452b8db5",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../mytap/libmytap.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../strings/libstrings.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../zlib/libzlib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "todo-t",
+	"nameOnDisk" : "todo-t",
+	"paths" : 
+	{
+		"build" : "unittest/examples",
+		"source" : "unittest/examples"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "unittest/examples/todo-t.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,196 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "mysys/thr_lock"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"TARGET_LINK_LIBRARIES",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"mysys/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 420,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  "
+				},
+				{
+					"fragment" : "-DMAIN"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "HAVE_CONFIG_H"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/zlib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/mysys"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "zlib::@036b525f80ea8433013a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dbug::@f597a2a676edbd8d9eb8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		}
+	],
+	"id" : "thr_lock::@64e0e5023d60a36b555e",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../strings/libstrings.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../zlib/libzlib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "thr_lock",
+	"nameOnDisk" : "thr_lock",
+	"paths" : 
+	{
+		"build" : "mysys",
+		"source" : "mysys"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "mysys/thr_lock.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

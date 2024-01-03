@@ -1,0 +1,418 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libmysqld/libmysqld.a"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"MERGE_STATIC_LIBS",
+			"MERGE_LIBRARIES",
+			"INSTALL",
+			"MYSQL_INSTALL_TARGETS",
+			"ADD_DEPENDENCIES",
+			"ADD_DEFINITIONS",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"libmysqld/CMakeLists.txt",
+			"cmake/install_macros.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 115,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 229,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 132,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 269,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 241,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 420,
+				"parent" : 26
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   -DHAVE_YASSL -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 25,
+					"define" : "EMBEDDED_LIBRARY"
+				},
+				{
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "MYSQL_SERVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/libmysql"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/libmysqld"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/sql"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/sql"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/regex"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/zlib"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/taocrypt/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/taocrypt/mySTL"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/sql/backup"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "zlib::@036b525f80ea8433013a"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "taocrypt::@a96ffe6081e3867cbbc4"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "federated_embedded::@b132bc03dee175d33813"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "archive_embedded::@2e44bbdae2afc01b0e4e"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "csv_embedded::@2d8bab0368e1620dc542"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "blackhole_embedded::@cbff55daf8a1ba3118e0"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "yassl::@9bb0f2564d716f33c873"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "heap_embedded::@bb54266284e84a722211"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "innobase_embedded::@8123eafe19b66234b7de"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "myisam_embedded::@a51e6dff989a3e96f0ee"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "myisammrg_embedded::@efff744f1108af639037"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "perfschema_embedded::@7a73c12e406e924f5617"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "dbug::@f597a2a676edbd8d9eb8"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "vio::@c062e1da8e129617a875"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "regex::@66ffa60c01c71d228a19"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "mysys_ssl::@f5713d3e6a34ebed922e"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "partition_embedded::@e985624cb5cf1aba6ab1"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "sql_embedded::@1fe367697efccb9292bd"
+		}
+	],
+	"id" : "mysqlserver::@1fe367697efccb9292bd",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local/mysql"
+		}
+	},
+	"name" : "mysqlserver",
+	"nameOnDisk" : "libmysqld.a",
+	"paths" : 
+	{
+		"build" : "libmysqld",
+		"source" : "libmysqld"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/libmysqld/mysqlserver_depends.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/libmysqld/mysqlserver_depends.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

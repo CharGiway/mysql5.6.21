@@ -1,0 +1,1 @@
+/usr/bin/clang++ -fPIC  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  -shared  -o validate_password.so CMakeFiles/validate_password.dir/validate_password.cc.o  -lpthread ../../libservices/libmysqlservices.a -lpthread 

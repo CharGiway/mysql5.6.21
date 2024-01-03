@@ -1,0 +1,452 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "sql/mysqld"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"MYSQL_ADD_EXECUTABLE",
+			"INSTALL",
+			"MYSQL_INSTALL_TARGETS",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_DEFINITIONS",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"cmake/mysql_add_executable.cmake",
+			"sql/CMakeLists.txt",
+			"cmake/install_macros.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 256,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 241,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 305,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 420,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   -DHAVE_YASSL -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "HAVE_EVENT_SCHEDULER"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "MYSQL_SERVER"
+				},
+				{
+					"define" : "mysqld_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/sql"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/regex"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/zlib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/taocrypt/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/sql"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "zlib::@036b525f80ea8433013a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "federated::@b132bc03dee175d33813"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "taocrypt::@a96ffe6081e3867cbbc4"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "archive::@2e44bbdae2afc01b0e4e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "yassl::@9bb0f2564d716f33c873"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "csv::@2d8bab0368e1620dc542"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "blackhole::@cbff55daf8a1ba3118e0"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "heap::@bb54266284e84a722211"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "innobase::@8123eafe19b66234b7de"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "myisam::@a51e6dff989a3e96f0ee"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "myisammrg::@efff744f1108af639037"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "perfschema::@7a73c12e406e924f5617"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "dbug::@f597a2a676edbd8d9eb8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "vio::@c062e1da8e129617a875"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "regex::@66ffa60c01c71d228a19"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "mysys_ssl::@f5713d3e6a34ebed922e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "binlog::@e985624cb5cf1aba6ab1"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "rpl::@e985624cb5cf1aba6ab1"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "master::@e985624cb5cf1aba6ab1"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "slave::@e985624cb5cf1aba6ab1"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "sql::@e985624cb5cf1aba6ab1"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "partition::@e985624cb5cf1aba6ab1"
+		}
+	],
+	"id" : "mysqld::@e985624cb5cf1aba6ab1",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 4,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local/mysql"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--export-dynamic",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libsql.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libbinlog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "librpl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libmaster.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libslave.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libsql.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys_ssl/libmysys_ssl.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/archive/libarchive.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/blackhole/libblackhole.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/csv/libcsv.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/federated/libfederated.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/heap/libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/innobase/libinnobase.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-laio",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/myisam/libmyisam.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/myisammrg/libmyisammrg.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../storage/perfschema/libperfschema.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "libpartition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../zlib/libzlib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../strings/libstrings.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../vio/libvio.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../regex/libregex.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcrypt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../extra/yassl/libyassl.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../extra/yassl/taocrypt/libtaocrypt.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "mysqld",
+	"nameOnDisk" : "mysqld",
+	"paths" : 
+	{
+		"build" : "sql",
+		"source" : "sql"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "sql/main.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

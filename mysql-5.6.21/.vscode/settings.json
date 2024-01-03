@@ -1,0 +1,5 @@
+{
+    "gnuGlobal.globalExecutable": "/usr/bin/global",
+    "gnuGlobal.gtagsExecutable": "/usr/bin/gtags",
+    "gnuGlobal.objDirPrefix": "/home/sino/go/src/linux/.global",
+}

@@ -1,0 +1,273 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "storage/perfschema/unittest/pfs_host-oom-t"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"PFS_ADD_TEST",
+			"TARGET_LINK_LIBRARIES",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_ADD_PLUGIN"
+		],
+		"files" : 
+		[
+			"storage/perfschema/unittest/CMakeLists.txt",
+			"CMakeLists.txt",
+			"storage/perfschema/CMakeLists.txt",
+			"cmake/plugin.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 1
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 420,
+				"parent" : 4
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 16,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 203,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 55,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   -DHAVE_YASSL -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"define" : "MYSQL_SERVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/caizhw3/code/mysql-5.6.21"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/sql"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/regex"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/extra/yassl/taocrypt/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/zlib"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include/mysql"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/unittest/mytap"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/storage/perfschema"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "zlib::@036b525f80ea8433013a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "perfschema::@7a73c12e406e924f5617"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dbug::@f597a2a676edbd8d9eb8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "mytap::@985555b84cdc3806b8a2"
+		}
+	],
+	"id" : "pfs_host-oom-t::@8ed3b3b27ae4e9ca6517",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../../unittest/mytap/libmytap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../libperfschema.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../../strings/libstrings.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../../zlib/libzlib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "pfs_host-oom-t",
+	"nameOnDisk" : "pfs_host-oom-t",
+	"paths" : 
+	{
+		"build" : "storage/perfschema/unittest",
+		"source" : "storage/perfschema/unittest"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "storage/perfschema/unittest/pfs_host-oom-t.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

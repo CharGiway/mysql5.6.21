@@ -1,0 +1,1 @@
+/usr/bin/clang++   -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   CMakeFiles/gen_pfs_lex_token.dir/gen_pfs_lex_token.cc.o  -o gen_pfs_lex_token  -lpthread 

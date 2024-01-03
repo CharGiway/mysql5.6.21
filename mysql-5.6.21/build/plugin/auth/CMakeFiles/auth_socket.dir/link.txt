@@ -1,0 +1,1 @@
+/usr/bin/clang -fPIC  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  -shared  -o auth_socket.so CMakeFiles/auth_socket.dir/auth_socket.c.o  -lpthread ../../libservices/libmysqlservices.a -lpthread 

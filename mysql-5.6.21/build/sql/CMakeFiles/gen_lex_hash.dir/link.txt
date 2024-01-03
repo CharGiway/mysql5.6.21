@@ -1,0 +1,1 @@
+/usr/bin/clang++   -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   CMakeFiles/gen_lex_hash.dir/gen_lex_hash.cc.o  -o gen_lex_hash  -lpthread 

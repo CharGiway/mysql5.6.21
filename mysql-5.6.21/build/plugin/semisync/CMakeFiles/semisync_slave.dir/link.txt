@@ -1,0 +1,1 @@
+/usr/bin/clang++ -fPIC  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  -shared  -o semisync_slave.so CMakeFiles/semisync_slave.dir/semisync.cc.o CMakeFiles/semisync_slave.dir/semisync_slave.cc.o CMakeFiles/semisync_slave.dir/semisync_slave_plugin.cc.o  -lpthread ../../libservices/libmysqlservices.a -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/clang -fPIC  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  -shared  -o adt_null.so CMakeFiles/audit_null.dir/audit_null.c.o  -lpthread ../../libservices/libmysqlservices.a -lpthread 

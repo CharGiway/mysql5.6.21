@@ -1,0 +1,297 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "extra/resolveip"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"MYSQL_ADD_EXECUTABLE",
+			"INSTALL",
+			"MYSQL_INSTALL_TARGETS",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_DEFINITIONS",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"cmake/mysql_add_executable.cmake",
+			"extra/CMakeLists.txt",
+			"cmake/install_macros.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 241,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 420,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "UNIV_INNOCHECKSUM"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/build/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/zlib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/storage/ndb/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/storage/ndb/include/util"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/storage/ndb/include/ndbapi"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/storage/ndb/include/portlib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/storage/ndb/include/mgmapi"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/caizhw3/code/mysql-5.6.21/storage/innobase/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "zlib::@036b525f80ea8433013a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "taocrypt::@a96ffe6081e3867cbbc4"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "yassl::@9bb0f2564d716f33c873"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "dbug::@f597a2a676edbd8d9eb8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "mysys_ssl::@f5713d3e6a34ebed922e"
+		}
+	],
+	"id" : "resolveip::@fd08edcdee322cedcc5e",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 4,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local/mysql"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys_ssl/libmysys_ssl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../mysys/libmysys.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../dbug/libdbug.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../strings/libstrings.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../zlib/libzlib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "yassl/libyassl.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "yassl/taocrypt/libtaocrypt.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "resolveip",
+	"nameOnDisk" : "resolveip",
+	"paths" : 
+	{
+		"build" : "extra",
+		"source" : "extra"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "extra/resolveip.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

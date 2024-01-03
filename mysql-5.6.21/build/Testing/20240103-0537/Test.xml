@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240103-0537-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.16.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="caizhw3"
+	OSRelease="5.4.0-169-generic"
+	OSVersion="#187-Ubuntu SMP Thu Nov 23 14:52:28 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="58"
+	ProcessorCacheSize="16384"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="7945"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2593.95"
+	>
+	<Testing>
+		<StartDateTime>Jan 03 15:56 UTC</StartDateTime>
+		<StartTestTime>1704297399</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 03 15:56 UTC</EndDateTime>
+		<EndTestTime>1704297399</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

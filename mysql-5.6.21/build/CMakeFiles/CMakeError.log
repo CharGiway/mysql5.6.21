@@ -1,0 +1,2698 @@
+Performing C++ SOURCE FILE Test HAVE_LLVM_LIBCPP failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fa7b8/fast && /usr/bin/make -f CMakeFiles/cmTC_fa7b8.dir/build.make CMakeFiles/cmTC_fa7b8.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fa7b8.dir/src.cxx.o
+/usr/bin/clang++    -Wall -Wno-null-conversion -Wno-unused-private-field -DHAVE_LLVM_LIBCPP   -o CMakeFiles/cmTC_fa7b8.dir/src.cxx.o -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fa7b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa7b8.dir/link.txt --verbose=1
+/usr/bin/clang++   -Wall -Wno-null-conversion -Wno-unused-private-field -DHAVE_LLVM_LIBCPP    -rdynamic CMakeFiles/cmTC_fa7b8.dir/src.cxx.o  -o cmTC_fa7b8 
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <ciso646>
+int main()
+{
+#ifdef _LIBCPP_VERSION
+  return 0;
+#else
+  return 1;
+#endif
+}
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ab4e0/fast && /usr/bin/make -f CMakeFiles/cmTC_ab4e0.dir/build.make CMakeFiles/cmTC_ab4e0.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab4e0.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTC_ab4e0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'floor' [-Wincompatible-library-redeclaration]
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^
+<command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+    1 | #define CHECK_FUNCTION_EXISTS floor
+      |                               ^
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: 'floor' is a builtin with type 'double (double)'
+<command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+    1 | #define CHECK_FUNCTION_EXISTS floor
+      |                               ^
+1 warning generated.
+Linking C executable cmTC_ab4e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab4e0.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=floor    -rdynamic CMakeFiles/cmTC_ab4e0.dir/CheckFunctionExists.c.o  -o cmTC_ab4e0 
+/usr/bin/ld: CMakeFiles/cmTC_ab4e0.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `floor'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_ab4e0.dir/build.make:87: cmTC_ab4e0] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ab4e0/fast] Error 2
+
+
+
+Determining if the function crypt exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_12103/fast && /usr/bin/make -f CMakeFiles/cmTC_12103.dir/build.make CMakeFiles/cmTC_12103.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_12103.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=crypt   -o CMakeFiles/cmTC_12103.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_12103
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12103.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=crypt    -rdynamic CMakeFiles/cmTC_12103.dir/CheckFunctionExists.c.o  -o cmTC_12103 
+/usr/bin/ld: CMakeFiles/cmTC_12103.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `crypt'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_12103.dir/build.make:87: cmTC_12103] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_12103/fast] Error 2
+
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d5837/fast && /usr/bin/make -f CMakeFiles/cmTC_d5837.dir/build.make CMakeFiles/cmTC_d5837.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5837.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_d5837.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d5837
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5837.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=dlopen    -rdynamic CMakeFiles/cmTC_d5837.dir/CheckFunctionExists.c.o  -o cmTC_d5837 
+/usr/bin/ld: CMakeFiles/cmTC_d5837.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `dlopen'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_d5837.dir/build.make:87: cmTC_d5837] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d5837/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a501e/fast && /usr/bin/make -f CMakeFiles/cmTC_a501e.dir/build.make CMakeFiles/cmTC_a501e.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a501e.dir/src.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a501e.dir/src.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a501e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a501e.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_a501e.dir/src.c.o  -o cmTC_a501e 
+/usr/bin/ld: CMakeFiles/cmTC_a501e.dir/src.c.o: in function `main':
+src.c:(.text+0x32): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x3b): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x48): undefined reference to `pthread_join'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a501e.dir/build.make:87: cmTC_a501e] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a501e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d8c9c/fast && /usr/bin/make -f CMakeFiles/cmTC_d8c9c.dir/build.make CMakeFiles/cmTC_d8c9c.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8c9c.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d8c9c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8c9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8c9c.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d8c9c.dir/CheckFunctionExists.c.o  -o cmTC_d8c9c  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_d8c9c.dir/build.make:87: cmTC_d8c9c] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d8c9c/fast] Error 2
+
+
+
+Determining if files cxxabi.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_72899/fast && /usr/bin/make -f CMakeFiles/cmTC_72899.dir/build.make CMakeFiles/cmTC_72899.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72899.dir/HAVE_CXXABI_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_72899.dir/HAVE_CXXABI_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_CXXABI_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_CXXABI_H.c:2:10: fatal error: 'cxxabi.h' file not found
+    2 | #include <cxxabi.h>
+      |          ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_72899.dir/build.make:66: CMakeFiles/cmTC_72899.dir/HAVE_CXXABI_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_72899/fast] Error 2
+
+
+Source:
+/* */
+#include <cxxabi.h>
+
+
+int main(void){return 0;}
+
+Determining if files floatingpoint.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_deef6/fast && /usr/bin/make -f CMakeFiles/cmTC_deef6.dir/build.make CMakeFiles/cmTC_deef6.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_deef6.dir/HAVE_FLOATINGPOINT_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_deef6.dir/HAVE_FLOATINGPOINT_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_FLOATINGPOINT_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_FLOATINGPOINT_H.c:2:10: fatal error: 'floatingpoint.h' file not found
+    2 | #include <floatingpoint.h>
+      |          ^~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_deef6.dir/build.make:66: CMakeFiles/cmTC_deef6.dir/HAVE_FLOATINGPOINT_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_deef6/fast] Error 2
+
+
+Source:
+/* */
+#include <floatingpoint.h>
+
+
+int main(void){return 0;}
+
+Determining if files ieeefp.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aa7bb/fast && /usr/bin/make -f CMakeFiles/cmTC_aa7bb.dir/build.make CMakeFiles/cmTC_aa7bb.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa7bb.dir/HAVE_IEEEFP_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_aa7bb.dir/HAVE_IEEEFP_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_IEEEFP_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_IEEEFP_H.c:2:10: fatal error: 'ieeefp.h' file not found
+    2 | #include <ieeefp.h>
+      |          ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_aa7bb.dir/build.make:66: CMakeFiles/cmTC_aa7bb.dir/HAVE_IEEEFP_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_aa7bb/fast] Error 2
+
+
+Source:
+/* */
+#include <ieeefp.h>
+
+
+int main(void){return 0;}
+
+Determining if files ndir.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_03e3c/fast && /usr/bin/make -f CMakeFiles/cmTC_03e3c.dir/build.make CMakeFiles/cmTC_03e3c.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03e3c.dir/HAVE_NDIR_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_03e3c.dir/HAVE_NDIR_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_NDIR_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_NDIR_H.c:2:10: fatal error: 'ndir.h' file not found
+    2 | #include <ndir.h>
+      |          ^~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_03e3c.dir/build.make:66: CMakeFiles/cmTC_03e3c.dir/HAVE_NDIR_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_03e3c/fast] Error 2
+
+
+Source:
+/* */
+#include <ndir.h>
+
+
+int main(void){return 0;}
+
+Determining if files port.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_495f6/fast && /usr/bin/make -f CMakeFiles/cmTC_495f6.dir/build.make CMakeFiles/cmTC_495f6.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_495f6.dir/HAVE_PORT_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_495f6.dir/HAVE_PORT_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_PORT_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_PORT_H.c:2:10: fatal error: 'port.h' file not found
+    2 | #include <port.h>
+      |          ^~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_495f6.dir/build.make:66: CMakeFiles/cmTC_495f6.dir/HAVE_PORT_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_495f6/fast] Error 2
+
+
+Source:
+/* */
+#include <port.h>
+
+
+int main(void){return 0;}
+
+Determining if files select.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8586a/fast && /usr/bin/make -f CMakeFiles/cmTC_8586a.dir/build.make CMakeFiles/cmTC_8586a.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8586a.dir/HAVE_SELECT_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_8586a.dir/HAVE_SELECT_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SELECT_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SELECT_H.c:2:10: fatal error: 'select.h' file not found
+    2 | #include <select.h>
+      |          ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8586a.dir/build.make:66: CMakeFiles/cmTC_8586a.dir/HAVE_SELECT_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8586a/fast] Error 2
+
+
+Source:
+/* */
+#include <select.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/ndir.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3fd35/fast && /usr/bin/make -f CMakeFiles/cmTC_3fd35.dir/build.make CMakeFiles/cmTC_3fd35.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3fd35.dir/HAVE_SYS_NDIR_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_3fd35.dir/HAVE_SYS_NDIR_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_NDIR_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_NDIR_H.c:2:10: fatal error: 'sys/ndir.h' file not found
+    2 | #include <sys/ndir.h>
+      |          ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3fd35.dir/build.make:66: CMakeFiles/cmTC_3fd35.dir/HAVE_SYS_NDIR_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3fd35/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/ndir.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/pte.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7b40d/fast && /usr/bin/make -f CMakeFiles/cmTC_7b40d.dir/build.make CMakeFiles/cmTC_7b40d.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b40d.dir/HAVE_SYS_PTE_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_7b40d.dir/HAVE_SYS_PTE_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_PTE_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_PTE_H.c:2:10: fatal error: 'sys/pte.h' file not found
+    2 | #include <sys/pte.h>
+      |          ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_7b40d.dir/build.make:66: CMakeFiles/cmTC_7b40d.dir/HAVE_SYS_PTE_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7b40d/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/pte.h>
+
+
+int main(void){return 0;}
+
+Determining if files synch.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_77066/fast && /usr/bin/make -f CMakeFiles/cmTC_77066.dir/build.make CMakeFiles/cmTC_77066.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77066.dir/HAVE_SYNCH_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_77066.dir/HAVE_SYNCH_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYNCH_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYNCH_H.c:2:10: fatal error: 'synch.h' file not found
+    2 | #include <synch.h>
+      |          ^~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_77066.dir/build.make:66: CMakeFiles/cmTC_77066.dir/HAVE_SYNCH_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_77066/fast] Error 2
+
+
+Source:
+/* */
+#include <synch.h>
+
+
+int main(void){return 0;}
+
+Determining if files sysent.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8ac46/fast && /usr/bin/make -f CMakeFiles/cmTC_8ac46.dir/build.make CMakeFiles/cmTC_8ac46.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ac46.dir/HAVE_SYSENT_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_8ac46.dir/HAVE_SYSENT_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYSENT_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYSENT_H.c:2:10: fatal error: 'sysent.h' file not found
+    2 | #include <sysent.h>
+      |          ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8ac46.dir/build.make:66: CMakeFiles/cmTC_8ac46.dir/HAVE_SYSENT_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8ac46/fast] Error 2
+
+
+Source:
+/* */
+#include <sysent.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/fpu.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_95a91/fast && /usr/bin/make -f CMakeFiles/cmTC_95a91.dir/build.make CMakeFiles/cmTC_95a91.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95a91.dir/HAVE_SYS_FPU_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_95a91.dir/HAVE_SYS_FPU_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FPU_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FPU_H.c:2:10: fatal error: 'sys/fpu.h' file not found
+    2 | #include <sys/fpu.h>
+      |          ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_95a91.dir/build.make:66: CMakeFiles/cmTC_95a91.dir/HAVE_SYS_FPU_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_95a91/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/fpu.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/malloc.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ef8af/fast && /usr/bin/make -f CMakeFiles/cmTC_ef8af.dir/build.make CMakeFiles/cmTC_ef8af.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef8af.dir/HAVE_SYS_MALLOC_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_ef8af.dir/HAVE_SYS_MALLOC_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MALLOC_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MALLOC_H.c:2:10: fatal error: 'sys/malloc.h' file not found
+    2 | #include <sys/malloc.h>
+      |          ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ef8af.dir/build.make:66: CMakeFiles/cmTC_ef8af.dir/HAVE_SYS_MALLOC_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ef8af/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/malloc.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/stream.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0c4b1/fast && /usr/bin/make -f CMakeFiles/cmTC_0c4b1.dir/build.make CMakeFiles/cmTC_0c4b1.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c4b1.dir/HAVE_SYS_STREAM_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_0c4b1.dir/HAVE_SYS_STREAM_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STREAM_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STREAM_H.c:2:10: fatal error: 'sys/stream.h' file not found
+    2 | #include <sys/stream.h>
+      |          ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_0c4b1.dir/build.make:66: CMakeFiles/cmTC_0c4b1.dir/HAVE_SYS_STREAM_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0c4b1/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/stream.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/termcap.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_97598/fast && /usr/bin/make -f CMakeFiles/cmTC_97598.dir/build.make CMakeFiles/cmTC_97598.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97598.dir/HAVE_SYS_TERMCAP_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_97598.dir/HAVE_SYS_TERMCAP_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_TERMCAP_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_TERMCAP_H.c:2:10: fatal error: 'sys/termcap.h' file not found
+    2 | #include <sys/termcap.h>
+      |          ^~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_97598.dir/build.make:66: CMakeFiles/cmTC_97598.dir/HAVE_SYS_TERMCAP_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_97598/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/termcap.h>
+
+
+int main(void){return 0;}
+
+Determining if files termbits.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_240e0/fast && /usr/bin/make -f CMakeFiles/cmTC_240e0.dir/build.make CMakeFiles/cmTC_240e0.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_240e0.dir/HAVE_TERMBITS_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_240e0.dir/HAVE_TERMBITS_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_TERMBITS_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_TERMBITS_H.c:2:10: fatal error: 'termbits.h' file not found
+    2 | #include <termbits.h>
+      |          ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_240e0.dir/build.make:66: CMakeFiles/cmTC_240e0.dir/HAVE_TERMBITS_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_240e0/fast] Error 2
+
+
+Source:
+/* */
+#include <termbits.h>
+
+
+int main(void){return 0;}
+
+Determining if files varargs.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_13da1/fast && /usr/bin/make -f CMakeFiles/cmTC_13da1.dir/build.make CMakeFiles/cmTC_13da1.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13da1.dir/HAVE_VARARGS_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_13da1.dir/HAVE_VARARGS_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_VARARGS_H.c
+In file included from /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_VARARGS_H.c:2:
+/usr/lib/llvm-18/lib/clang/18/include/varargs.h:11:4: error: "Please use <stdarg.h> instead of <varargs.h>"
+   11 |   #error "Please use <stdarg.h> instead of <varargs.h>"
+      |    ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_13da1.dir/build.make:66: CMakeFiles/cmTC_13da1.dir/HAVE_VARARGS_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_13da1/fast] Error 2
+
+
+Source:
+/* */
+#include <varargs.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/utime.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9df62/fast && /usr/bin/make -f CMakeFiles/cmTC_9df62.dir/build.make CMakeFiles/cmTC_9df62.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9df62.dir/HAVE_SYS_UTIME_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_9df62.dir/HAVE_SYS_UTIME_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c:2:10: fatal error: 'sys/utime.h' file not found
+    2 | #include <sys/utime.h>
+      |          ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_9df62.dir/build.make:66: CMakeFiles/cmTC_9df62.dir/HAVE_SYS_UTIME_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9df62/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/vadvise.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_daa51/fast && /usr/bin/make -f CMakeFiles/cmTC_daa51.dir/build.make CMakeFiles/cmTC_daa51.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_daa51.dir/HAVE_SYS_VADVISE_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_daa51.dir/HAVE_SYS_VADVISE_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_VADVISE_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_VADVISE_H.c:2:10: fatal error: 'sys/vadvise.h' file not found
+    2 | #include <sys/vadvise.h>
+      |          ^~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_daa51.dir/build.make:66: CMakeFiles/cmTC_daa51.dir/HAVE_SYS_VADVISE_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_daa51/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/vadvise.h>
+
+
+int main(void){return 0;}
+
+Determining if files vis.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_15c98/fast && /usr/bin/make -f CMakeFiles/cmTC_15c98.dir/build.make CMakeFiles/cmTC_15c98.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15c98.dir/HAVE_VIS_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_15c98.dir/HAVE_VIS_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_VIS_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_VIS_H.c:2:10: fatal error: 'vis.h' file not found
+    2 | #include <vis.h>
+      |          ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_15c98.dir/build.make:66: CMakeFiles/cmTC_15c98.dir/HAVE_VIS_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_15c98/fast] Error 2
+
+
+Source:
+/* */
+#include <vis.h>
+
+
+int main(void){return 0;}
+
+Determining if files sasl/sasl.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fd2b1/fast && /usr/bin/make -f CMakeFiles/cmTC_fd2b1.dir/build.make CMakeFiles/cmTC_fd2b1.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd2b1.dir/HAVE_SASL_SASL_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_fd2b1.dir/HAVE_SASL_SASL_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SASL_SASL_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SASL_SASL_H.c:2:10: fatal error: 'sasl/sasl.h' file not found
+    2 | #include <sasl/sasl.h>
+      |          ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_fd2b1.dir/build.make:66: CMakeFiles/cmTC_fd2b1.dir/HAVE_SASL_SASL_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fd2b1/fast] Error 2
+
+
+Source:
+/* */
+#include <sasl/sasl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/devpoll.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc355/fast && /usr/bin/make -f CMakeFiles/cmTC_dc355.dir/build.make CMakeFiles/cmTC_dc355.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc355.dir/HAVE_DEVPOLL.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_dc355.dir/HAVE_DEVPOLL.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_DEVPOLL.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_DEVPOLL.c:2:10: fatal error: 'sys/devpoll.h' file not found
+    2 | #include <sys/devpoll.h>
+      |          ^~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_dc355.dir/build.make:66: CMakeFiles/cmTC_dc355.dir/HAVE_DEVPOLL.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_dc355/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/devpoll.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/devpoll.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c6ea0/fast && /usr/bin/make -f CMakeFiles/cmTC_c6ea0.dir/build.make CMakeFiles/cmTC_c6ea0.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6ea0.dir/HAVE_SYS_DEVPOLL_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_c6ea0.dir/HAVE_SYS_DEVPOLL_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_DEVPOLL_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_DEVPOLL_H.c:2:10: fatal error: 'sys/devpoll.h' file not found
+    2 | #include <sys/devpoll.h>
+      |          ^~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c6ea0.dir/build.make:66: CMakeFiles/cmTC_c6ea0.dir/HAVE_SYS_DEVPOLL_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c6ea0/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/devpoll.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/event.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1b496/fast && /usr/bin/make -f CMakeFiles/cmTC_1b496.dir/build.make CMakeFiles/cmTC_1b496.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b496.dir/HAVE_SYS_EVENT_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_1b496.dir/HAVE_SYS_EVENT_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_EVENT_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_EVENT_H.c:2:10: fatal error: 'sys/event.h' file not found
+    2 | #include <sys/event.h>
+      |          ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1b496.dir/build.make:66: CMakeFiles/cmTC_1b496.dir/HAVE_SYS_EVENT_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1b496/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/event.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/ptem.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e64f7/fast && /usr/bin/make -f CMakeFiles/cmTC_e64f7.dir/build.make CMakeFiles/cmTC_e64f7.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e64f7.dir/HAVE_SYS_PTEM_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_e64f7.dir/HAVE_SYS_PTEM_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_PTEM_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_PTEM_H.c:2:10: fatal error: 'sys/ptem.h' file not found
+    2 | #include <sys/ptem.h>
+      |          ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e64f7.dir/build.make:66: CMakeFiles/cmTC_e64f7.dir/HAVE_SYS_PTEM_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e64f7/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/ptem.h>
+
+
+int main(void){return 0;}
+
+Determining if the function _aligned_malloc exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3073c/fast && /usr/bin/make -f CMakeFiles/cmTC_3073c.dir/build.make CMakeFiles/cmTC_3073c.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3073c.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=_aligned_malloc   -o CMakeFiles/cmTC_3073c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3073c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3073c.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=_aligned_malloc    -rdynamic CMakeFiles/cmTC_3073c.dir/CheckFunctionExists.c.o  -o cmTC_3073c  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_3073c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_aligned_malloc'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_3073c.dir/build.make:87: cmTC_3073c] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3073c/fast] Error 2
+
+
+
+Determining if the function _aligned_free exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3ccf/fast && /usr/bin/make -f CMakeFiles/cmTC_e3ccf.dir/build.make CMakeFiles/cmTC_e3ccf.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3ccf.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=_aligned_free   -o CMakeFiles/cmTC_e3ccf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e3ccf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3ccf.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=_aligned_free    -rdynamic CMakeFiles/cmTC_e3ccf.dir/CheckFunctionExists.c.o  -o cmTC_e3ccf  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_e3ccf.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_aligned_free'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_e3ccf.dir/build.make:87: cmTC_e3ccf] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e3ccf/fast] Error 2
+
+
+
+Determining if the function aio_read exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7566f/fast && /usr/bin/make -f CMakeFiles/cmTC_7566f.dir/build.make CMakeFiles/cmTC_7566f.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7566f.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=aio_read   -o CMakeFiles/cmTC_7566f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7566f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7566f.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=aio_read    -rdynamic CMakeFiles/cmTC_7566f.dir/CheckFunctionExists.c.o  -o cmTC_7566f  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_7566f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `aio_read'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_7566f.dir/build.make:87: cmTC_7566f] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7566f/fast] Error 2
+
+
+
+Determining if the function printstack exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d8e21/fast && /usr/bin/make -f CMakeFiles/cmTC_d8e21.dir/build.make CMakeFiles/cmTC_d8e21.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8e21.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=printstack   -o CMakeFiles/cmTC_d8e21.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8e21
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8e21.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=printstack    -rdynamic CMakeFiles/cmTC_d8e21.dir/CheckFunctionExists.c.o  -o cmTC_d8e21  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_d8e21.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `printstack'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_d8e21.dir/build.make:87: cmTC_d8e21] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d8e21/fast] Error 2
+
+
+
+Determining if the function bmove exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a6021/fast && /usr/bin/make -f CMakeFiles/cmTC_a6021.dir/build.make CMakeFiles/cmTC_a6021.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6021.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=bmove   -o CMakeFiles/cmTC_a6021.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a6021
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6021.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=bmove    -rdynamic CMakeFiles/cmTC_a6021.dir/CheckFunctionExists.c.o  -o cmTC_a6021  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_a6021.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `bmove'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a6021.dir/build.make:87: cmTC_a6021] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a6021/fast] Error 2
+
+
+
+Determining if the function directio exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_52df0/fast && /usr/bin/make -f CMakeFiles/cmTC_52df0.dir/build.make CMakeFiles/cmTC_52df0.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52df0.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=directio   -o CMakeFiles/cmTC_52df0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_52df0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52df0.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=directio    -rdynamic CMakeFiles/cmTC_52df0.dir/CheckFunctionExists.c.o  -o cmTC_52df0  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_52df0.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `directio'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_52df0.dir/build.make:87: cmTC_52df0] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_52df0/fast] Error 2
+
+
+
+Determining if the function _doprnt exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_44d81/fast && /usr/bin/make -f CMakeFiles/cmTC_44d81.dir/build.make CMakeFiles/cmTC_44d81.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44d81.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=_doprnt   -o CMakeFiles/cmTC_44d81.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_44d81
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44d81.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=_doprnt    -rdynamic CMakeFiles/cmTC_44d81.dir/CheckFunctionExists.c.o  -o cmTC_44d81  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_44d81.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_doprnt'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_44d81.dir/build.make:87: cmTC_44d81] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_44d81/fast] Error 2
+
+
+
+Determining if the function compress exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f620c/fast && /usr/bin/make -f CMakeFiles/cmTC_f620c.dir/build.make CMakeFiles/cmTC_f620c.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f620c.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=compress   -o CMakeFiles/cmTC_f620c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f620c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f620c.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=compress    -rdynamic CMakeFiles/cmTC_f620c.dir/CheckFunctionExists.c.o  -o cmTC_f620c  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_f620c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `compress'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_f620c.dir/build.make:87: cmTC_f620c] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f620c/fast] Error 2
+
+
+
+Determining if the function fconvert exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8a45d/fast && /usr/bin/make -f CMakeFiles/cmTC_8a45d.dir/build.make CMakeFiles/cmTC_8a45d.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8a45d.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=fconvert   -o CMakeFiles/cmTC_8a45d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8a45d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a45d.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=fconvert    -rdynamic CMakeFiles/cmTC_8a45d.dir/CheckFunctionExists.c.o  -o cmTC_8a45d  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_8a45d.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `fconvert'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_8a45d.dir/build.make:87: cmTC_8a45d] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8a45d/fast] Error 2
+
+
+
+Determining if the function fpsetmask exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a0acb/fast && /usr/bin/make -f CMakeFiles/cmTC_a0acb.dir/build.make CMakeFiles/cmTC_a0acb.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0acb.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=fpsetmask   -o CMakeFiles/cmTC_a0acb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a0acb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0acb.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=fpsetmask    -rdynamic CMakeFiles/cmTC_a0acb.dir/CheckFunctionExists.c.o  -o cmTC_a0acb  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_a0acb.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `fpsetmask'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a0acb.dir/build.make:87: cmTC_a0acb] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a0acb/fast] Error 2
+
+
+
+Determining if the function gethrtime exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fb271/fast && /usr/bin/make -f CMakeFiles/cmTC_fb271.dir/build.make CMakeFiles/cmTC_fb271.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb271.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=gethrtime   -o CMakeFiles/cmTC_fb271.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fb271
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb271.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=gethrtime    -rdynamic CMakeFiles/cmTC_fb271.dir/CheckFunctionExists.c.o  -o cmTC_fb271  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_fb271.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `gethrtime'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_fb271.dir/build.make:87: cmTC_fb271] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fb271/fast] Error 2
+
+
+
+Determining if the function getpassphrase exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ade6c/fast && /usr/bin/make -f CMakeFiles/cmTC_ade6c.dir/build.make CMakeFiles/cmTC_ade6c.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ade6c.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=getpassphrase   -o CMakeFiles/cmTC_ade6c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ade6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ade6c.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=getpassphrase    -rdynamic CMakeFiles/cmTC_ade6c.dir/CheckFunctionExists.c.o  -o cmTC_ade6c  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_ade6c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `getpassphrase'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_ade6c.dir/build.make:87: cmTC_ade6c] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ade6c/fast] Error 2
+
+
+
+Determining if the function issetugid exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_19813/fast && /usr/bin/make -f CMakeFiles/cmTC_19813.dir/build.make CMakeFiles/cmTC_19813.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19813.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=issetugid   -o CMakeFiles/cmTC_19813.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_19813
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19813.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=issetugid    -rdynamic CMakeFiles/cmTC_19813.dir/CheckFunctionExists.c.o  -o cmTC_19813  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_19813.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `issetugid'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_19813.dir/build.make:87: cmTC_19813] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_19813/fast] Error 2
+
+
+
+Determining if the function port_create exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3768b/fast && /usr/bin/make -f CMakeFiles/cmTC_3768b.dir/build.make CMakeFiles/cmTC_3768b.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3768b.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=port_create   -o CMakeFiles/cmTC_3768b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3768b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3768b.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=port_create    -rdynamic CMakeFiles/cmTC_3768b.dir/CheckFunctionExists.c.o  -o cmTC_3768b  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_3768b.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `port_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_3768b.dir/build.make:87: cmTC_3768b] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3768b/fast] Error 2
+
+
+
+Determining if the function pthread_attr_create exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7287e/fast && /usr/bin/make -f CMakeFiles/cmTC_7287e.dir/build.make CMakeFiles/cmTC_7287e.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7287e.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_attr_create   -o CMakeFiles/cmTC_7287e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7287e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7287e.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_attr_create    -rdynamic CMakeFiles/cmTC_7287e.dir/CheckFunctionExists.c.o  -o cmTC_7287e  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_7287e.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_attr_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_7287e.dir/build.make:87: cmTC_7287e] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7287e/fast] Error 2
+
+
+
+Determining if the function pthread_condattr_create exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f56b8/fast && /usr/bin/make -f CMakeFiles/cmTC_f56b8.dir/build.make CMakeFiles/cmTC_f56b8.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f56b8.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_condattr_create   -o CMakeFiles/cmTC_f56b8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f56b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f56b8.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_condattr_create    -rdynamic CMakeFiles/cmTC_f56b8.dir/CheckFunctionExists.c.o  -o cmTC_f56b8  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_f56b8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_condattr_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_f56b8.dir/build.make:87: cmTC_f56b8] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f56b8/fast] Error 2
+
+
+
+Determining if the function pthread_threadmask exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_36e4a/fast && /usr/bin/make -f CMakeFiles/cmTC_36e4a.dir/build.make CMakeFiles/cmTC_36e4a.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36e4a.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_threadmask   -o CMakeFiles/cmTC_36e4a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_36e4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36e4a.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_threadmask    -rdynamic CMakeFiles/cmTC_36e4a.dir/CheckFunctionExists.c.o  -o cmTC_36e4a  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_36e4a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_threadmask'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_36e4a.dir/build.make:87: cmTC_36e4a] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_36e4a/fast] Error 2
+
+
+
+Determining if the function pthread_yield_np exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c3aec/fast && /usr/bin/make -f CMakeFiles/cmTC_c3aec.dir/build.make CMakeFiles/cmTC_c3aec.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3aec.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_yield_np   -o CMakeFiles/cmTC_c3aec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c3aec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3aec.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=pthread_yield_np    -rdynamic CMakeFiles/cmTC_c3aec.dir/CheckFunctionExists.c.o  -o cmTC_c3aec  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_c3aec.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_yield_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_c3aec.dir/build.make:87: cmTC_c3aec] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c3aec/fast] Error 2
+
+
+
+Determining if the function rwlock_init exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_19319/fast && /usr/bin/make -f CMakeFiles/cmTC_19319.dir/build.make CMakeFiles/cmTC_19319.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19319.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=rwlock_init   -o CMakeFiles/cmTC_19319.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_19319
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19319.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=rwlock_init    -rdynamic CMakeFiles/cmTC_19319.dir/CheckFunctionExists.c.o  -o cmTC_19319  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_19319.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `rwlock_init'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_19319.dir/build.make:87: cmTC_19319] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_19319/fast] Error 2
+
+
+
+Determining if the function setfd exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_42268/fast && /usr/bin/make -f CMakeFiles/cmTC_42268.dir/build.make CMakeFiles/cmTC_42268.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42268.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=setfd   -o CMakeFiles/cmTC_42268.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_42268
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42268.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=setfd    -rdynamic CMakeFiles/cmTC_42268.dir/CheckFunctionExists.c.o  -o cmTC_42268  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_42268.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `setfd'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_42268.dir/build.make:87: cmTC_42268] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_42268/fast] Error 2
+
+
+
+Determining if the function sigthreadmask exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b495f/fast && /usr/bin/make -f CMakeFiles/cmTC_b495f.dir/build.make CMakeFiles/cmTC_b495f.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b495f.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=sigthreadmask   -o CMakeFiles/cmTC_b495f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b495f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b495f.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=sigthreadmask    -rdynamic CMakeFiles/cmTC_b495f.dir/CheckFunctionExists.c.o  -o cmTC_b495f  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_b495f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `sigthreadmask'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_b495f.dir/build.make:87: cmTC_b495f] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b495f/fast] Error 2
+
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_54dd2/fast && /usr/bin/make -f CMakeFiles/cmTC_54dd2.dir/build.make CMakeFiles/cmTC_54dd2.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54dd2.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_54dd2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_54dd2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54dd2.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_54dd2.dir/CheckFunctionExists.c.o  -o cmTC_54dd2  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_54dd2.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `strlcpy'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_54dd2.dir/build.make:87: cmTC_54dd2] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_54dd2/fast] Error 2
+
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5319b/fast && /usr/bin/make -f CMakeFiles/cmTC_5319b.dir/build.make CMakeFiles/cmTC_5319b.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5319b.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_5319b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5319b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5319b.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_5319b.dir/CheckFunctionExists.c.o  -o cmTC_5319b  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_5319b.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `strlcat'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_5319b.dir/build.make:87: cmTC_5319b] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5319b/fast] Error 2
+
+
+
+Determining if the function fgetln exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fd2a4/fast && /usr/bin/make -f CMakeFiles/cmTC_fd2a4.dir/build.make CMakeFiles/cmTC_fd2a4.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd2a4.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=fgetln   -o CMakeFiles/cmTC_fd2a4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fd2a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd2a4.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=fgetln    -rdynamic CMakeFiles/cmTC_fd2a4.dir/CheckFunctionExists.c.o  -o cmTC_fd2a4  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_fd2a4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `fgetln'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_fd2a4.dir/build.make:87: cmTC_fd2a4] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fd2a4/fast] Error 2
+
+
+
+Determining if the function tell exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b2779/fast && /usr/bin/make -f CMakeFiles/cmTC_b2779.dir/build.make CMakeFiles/cmTC_b2779.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2779.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=tell   -o CMakeFiles/cmTC_b2779.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b2779
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2779.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=tell    -rdynamic CMakeFiles/cmTC_b2779.dir/CheckFunctionExists.c.o  -o cmTC_b2779  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_b2779.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `tell'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_b2779.dir/build.make:87: cmTC_b2779] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b2779/fast] Error 2
+
+
+
+Determining if the function thr_setconcurrency exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_13fd4/fast && /usr/bin/make -f CMakeFiles/cmTC_13fd4.dir/build.make CMakeFiles/cmTC_13fd4.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13fd4.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=thr_setconcurrency   -o CMakeFiles/cmTC_13fd4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_13fd4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13fd4.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=thr_setconcurrency    -rdynamic CMakeFiles/cmTC_13fd4.dir/CheckFunctionExists.c.o  -o cmTC_13fd4  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_13fd4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `thr_setconcurrency'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_13fd4.dir/build.make:87: cmTC_13fd4] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_13fd4/fast] Error 2
+
+
+
+Determining if the function thr_yield exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a22ac/fast && /usr/bin/make -f CMakeFiles/cmTC_a22ac.dir/build.make CMakeFiles/cmTC_a22ac.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a22ac.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=thr_yield   -o CMakeFiles/cmTC_a22ac.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a22ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a22ac.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=thr_yield    -rdynamic CMakeFiles/cmTC_a22ac.dir/CheckFunctionExists.c.o  -o cmTC_a22ac  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_a22ac.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `thr_yield'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a22ac.dir/build.make:87: cmTC_a22ac] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a22ac/fast] Error 2
+
+
+
+Determining if the function ntohll exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_46070/fast && /usr/bin/make -f CMakeFiles/cmTC_46070.dir/build.make CMakeFiles/cmTC_46070.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46070.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=ntohll   -o CMakeFiles/cmTC_46070.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_46070
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46070.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=ntohll    -rdynamic CMakeFiles/cmTC_46070.dir/CheckFunctionExists.c.o  -o cmTC_46070  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_46070.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `ntohll'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_46070.dir/build.make:87: cmTC_46070] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_46070/fast] Error 2
+
+
+
+Determining if the function kqueue exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_51568/fast && /usr/bin/make -f CMakeFiles/cmTC_51568.dir/build.make CMakeFiles/cmTC_51568.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_51568.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=kqueue   -o CMakeFiles/cmTC_51568.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_51568
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51568.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=kqueue    -rdynamic CMakeFiles/cmTC_51568.dir/CheckFunctionExists.c.o  -o cmTC_51568  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_51568.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `kqueue'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_51568.dir/build.make:87: cmTC_51568] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_51568/fast] Error 2
+
+
+
+Determining if the function kqueue exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_08e7f/fast && /usr/bin/make -f CMakeFiles/cmTC_08e7f.dir/build.make CMakeFiles/cmTC_08e7f.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08e7f.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=kqueue   -o CMakeFiles/cmTC_08e7f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_08e7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08e7f.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=kqueue    -rdynamic CMakeFiles/cmTC_08e7f.dir/CheckFunctionExists.c.o  -o cmTC_08e7f  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_08e7f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `kqueue'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_08e7f.dir/build.make:87: cmTC_08e7f] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_08e7f/fast] Error 2
+
+
+
+Determining if files ia64intrin.h exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_13484/fast && /usr/bin/make -f CMakeFiles/cmTC_13484.dir/build.make CMakeFiles/cmTC_13484.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13484.dir/HAVE_IA64INTRIN_H.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_13484.dir/HAVE_IA64INTRIN_H.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_IA64INTRIN_H.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckIncludeFiles/HAVE_IA64INTRIN_H.c:2:10: fatal error: 'ia64intrin.h' file not found
+    2 | #include <ia64intrin.h>
+      |          ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_13484.dir/build.make:66: CMakeFiles/cmTC_13484.dir/HAVE_IA64INTRIN_H.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_13484/fast] Error 2
+
+
+Source:
+/* */
+#include <ia64intrin.h>
+
+
+int main(void){return 0;}
+
+Determining if the function read_real_time exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5789d/fast && /usr/bin/make -f CMakeFiles/cmTC_5789d.dir/build.make CMakeFiles/cmTC_5789d.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5789d.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=read_real_time   -o CMakeFiles/cmTC_5789d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5789d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5789d.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=read_real_time    -rdynamic CMakeFiles/cmTC_5789d.dir/CheckFunctionExists.c.o  -o cmTC_5789d  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_5789d.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `read_real_time'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_5789d.dir/build.make:87: cmTC_5789d] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5789d/fast] Error 2
+
+
+
+Determining if the function rdtscll exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5c23e/fast && /usr/bin/make -f CMakeFiles/cmTC_5c23e.dir/build.make CMakeFiles/cmTC_5c23e.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5c23e.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=rdtscll   -o CMakeFiles/cmTC_5c23e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5c23e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c23e.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=rdtscll    -rdynamic CMakeFiles/cmTC_5c23e.dir/CheckFunctionExists.c.o  -o cmTC_5c23e  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_5c23e.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `rdtscll'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_5c23e.dir/build.make:87: cmTC_5c23e] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5c23e/fast] Error 2
+
+
+
+Determining if the TIOCSTAT exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0f894/fast && /usr/bin/make -f CMakeFiles/cmTC_0f894.dir/build.make CMakeFiles/cmTC_0f894.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f894.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_0f894.dir/CheckSymbolExists.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'TIOCSTAT'
+    8 |   return ((int*)(&TIOCSTAT))[argc];
+      |                   ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_0f894.dir/build.make:66: CMakeFiles/cmTC_0f894.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0f894/fast] Error 2
+
+
+File /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/ioctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TIOCSTAT
+  return ((int*)(&TIOCSTAT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the FIONREAD exist failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_30d89/fast && /usr/bin/make -f CMakeFiles/cmTC_30d89.dir/build.make CMakeFiles/cmTC_30d89.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30d89.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_30d89.dir/CheckSymbolExists.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/filio.h' file not found
+    2 | #include <sys/filio.h>
+      |          ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_30d89.dir/build.make:66: CMakeFiles/cmTC_30d89.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_30d89/fast] Error 2
+
+
+File /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/filio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FIONREAD
+  return ((int*)(&FIONREAD))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of uchar failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f4a2/fast && /usr/bin/make -f CMakeFiles/cmTC_4f4a2.dir/build.make CMakeFiles/cmTC_4f4a2.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4f4a2.dir/SIZEOF_UCHAR.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_4f4a2.dir/SIZEOF_UCHAR.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:27:12: error: use of undeclared identifier 'uchar'; did you mean 'char'?
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:27:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                     ^~~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:28:12: error: use of undeclared identifier 'uchar'; did you mean 'char'?
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:28:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                     ^~~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:29:12: error: use of undeclared identifier 'uchar'; did you mean 'char'?
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:29:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                     ^~~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:30:12: error: use of undeclared identifier 'uchar'; did you mean 'char'?
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:30:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                     ^~~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:31:12: error: use of undeclared identifier 'uchar'; did you mean 'char'?
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:31:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uchar))
+      |                     ^~~~~~~
+10 errors generated.
+make[1]: *** [CMakeFiles/cmTC_4f4a2.dir/build.make:66: CMakeFiles/cmTC_4f4a2.dir/SIZEOF_UCHAR.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4f4a2/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uchar))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of int8 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c0e8d/fast && /usr/bin/make -f CMakeFiles/cmTC_c0e8d.dir/build.make CMakeFiles/cmTC_c0e8d.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0e8d.dir/SIZEOF_INT8.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_c0e8d.dir/SIZEOF_INT8.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:27:12: error: use of undeclared identifier 'int8'; did you mean 'int'?
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:27:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:28:12: error: use of undeclared identifier 'int8'; did you mean 'int'?
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:28:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:29:12: error: use of undeclared identifier 'int8'; did you mean 'int'?
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:29:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:30:12: error: use of undeclared identifier 'int8'; did you mean 'int'?
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:30:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:31:12: error: use of undeclared identifier 'int8'; did you mean 'int'?
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:31:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:25:21: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int8))
+      |                     ^~~~~~
+10 errors generated.
+make[1]: *** [CMakeFiles/cmTC_c0e8d.dir/build.make:66: CMakeFiles/cmTC_c0e8d.dir/SIZEOF_INT8.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c0e8d/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(int8))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of uint8 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4bcd3/fast && /usr/bin/make -f CMakeFiles/cmTC_4bcd3.dir/build.make CMakeFiles/cmTC_4bcd3.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4bcd3.dir/SIZEOF_UINT8.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_4bcd3.dir/SIZEOF_UINT8.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:27:12: error: use of undeclared identifier 'uint8'
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:28:12: error: use of undeclared identifier 'uint8'
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:29:12: error: use of undeclared identifier 'uint8'
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:30:12: error: use of undeclared identifier 'uint8'
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint8))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:31:12: error: use of undeclared identifier 'uint8'
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint8))
+      |                      ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_4bcd3.dir/build.make:66: CMakeFiles/cmTC_4bcd3.dir/SIZEOF_UINT8.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4bcd3/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uint8))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of int16 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_799d4/fast && /usr/bin/make -f CMakeFiles/cmTC_799d4.dir/build.make CMakeFiles/cmTC_799d4.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_799d4.dir/SIZEOF_INT16.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_799d4.dir/SIZEOF_INT16.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:27:12: error: use of undeclared identifier 'int16'
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:28:12: error: use of undeclared identifier 'int16'
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:29:12: error: use of undeclared identifier 'int16'
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:30:12: error: use of undeclared identifier 'int16'
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:31:12: error: use of undeclared identifier 'int16'
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int16))
+      |                      ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_799d4.dir/build.make:66: CMakeFiles/cmTC_799d4.dir/SIZEOF_INT16.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_799d4/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(int16))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of uint16 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b3270/fast && /usr/bin/make -f CMakeFiles/cmTC_b3270.dir/build.make CMakeFiles/cmTC_b3270.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3270.dir/SIZEOF_UINT16.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_b3270.dir/SIZEOF_UINT16.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:27:12: error: use of undeclared identifier 'uint16'
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:28:12: error: use of undeclared identifier 'uint16'
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:29:12: error: use of undeclared identifier 'uint16'
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:30:12: error: use of undeclared identifier 'uint16'
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint16))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:31:12: error: use of undeclared identifier 'uint16'
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint16))
+      |                      ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_b3270.dir/build.make:66: CMakeFiles/cmTC_b3270.dir/SIZEOF_UINT16.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b3270/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uint16))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of int32 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_83a3b/fast && /usr/bin/make -f CMakeFiles/cmTC_83a3b.dir/build.make CMakeFiles/cmTC_83a3b.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83a3b.dir/SIZEOF_INT32.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_83a3b.dir/SIZEOF_INT32.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:27:12: error: use of undeclared identifier 'int32'
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:28:12: error: use of undeclared identifier 'int32'
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:29:12: error: use of undeclared identifier 'int32'
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:30:12: error: use of undeclared identifier 'int32'
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:31:12: error: use of undeclared identifier 'int32'
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int32))
+      |                      ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_83a3b.dir/build.make:66: CMakeFiles/cmTC_83a3b.dir/SIZEOF_INT32.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_83a3b/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(int32))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of uint32 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f23b3/fast && /usr/bin/make -f CMakeFiles/cmTC_f23b3.dir/build.make CMakeFiles/cmTC_f23b3.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f23b3.dir/SIZEOF_UINT32.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_f23b3.dir/SIZEOF_UINT32.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:27:12: error: use of undeclared identifier 'uint32'
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:28:12: error: use of undeclared identifier 'uint32'
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:29:12: error: use of undeclared identifier 'uint32'
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:30:12: error: use of undeclared identifier 'uint32'
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint32))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:31:12: error: use of undeclared identifier 'uint32'
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint32))
+      |                      ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_f23b3.dir/build.make:66: CMakeFiles/cmTC_f23b3.dir/SIZEOF_UINT32.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f23b3/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uint32))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of int64 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f7add/fast && /usr/bin/make -f CMakeFiles/cmTC_f7add.dir/build.make CMakeFiles/cmTC_f7add.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7add.dir/SIZEOF_INT64.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_f7add.dir/SIZEOF_INT64.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:27:12: error: use of undeclared identifier 'int64'
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:28:12: error: use of undeclared identifier 'int64'
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:29:12: error: use of undeclared identifier 'int64'
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:30:12: error: use of undeclared identifier 'int64'
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:31:12: error: use of undeclared identifier 'int64'
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(int64))
+      |                      ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_f7add.dir/build.make:66: CMakeFiles/cmTC_f7add.dir/SIZEOF_INT64.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f7add/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of uint64 failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0edb3/fast && /usr/bin/make -f CMakeFiles/cmTC_0edb3.dir/build.make CMakeFiles/cmTC_0edb3.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0edb3.dir/SIZEOF_UINT64.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_0edb3.dir/SIZEOF_UINT64.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:27:12: error: use of undeclared identifier 'uint64'
+   27 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:28:12: error: use of undeclared identifier 'uint64'
+   28 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:29:12: error: use of undeclared identifier 'uint64'
+   29 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:30:12: error: use of undeclared identifier 'uint64'
+   30 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint64))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:31:12: error: use of undeclared identifier 'uint64'
+   31 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:25:22: note: expanded from macro 'SIZE'
+   25 | #define SIZE (sizeof(uint64))
+      |                      ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_0edb3.dir/build.make:66: CMakeFiles/cmTC_0edb3.dir/SIZEOF_UINT64.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0edb3/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "stdio.h"
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uint64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of bool failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_37956/fast && /usr/bin/make -f CMakeFiles/cmTC_37956.dir/build.make CMakeFiles/cmTC_37956.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37956.dir/SIZEOF_BOOL.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_37956.dir/SIZEOF_BOOL.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:26:12: error: use of undeclared identifier 'bool'; did you mean '_Bool'?
+   26 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:22: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:26:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   26 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:21: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:27:12: error: use of undeclared identifier 'bool'; did you mean '_Bool'?
+   27 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:22: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:27:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   27 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:21: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:28:12: error: use of undeclared identifier 'bool'; did you mean '_Bool'?
+   28 |   ('0' + ((SIZE / 100)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:22: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:28:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   28 |   ('0' + ((SIZE / 100)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:21: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:29:12: error: use of undeclared identifier 'bool'; did you mean '_Bool'?
+   29 |   ('0' + ((SIZE / 10)%10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:22: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:29:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   29 |   ('0' + ((SIZE / 10)%10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:21: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                     ^~~~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:30:12: error: use of undeclared identifier 'bool'; did you mean '_Bool'?
+   30 |   ('0' +  (SIZE    % 10)),
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:22: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                      ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:30:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   30 |   ('0' +  (SIZE    % 10)),
+      |            ^~~~
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:24:21: note: expanded from macro 'SIZE'
+   24 | #define SIZE (sizeof(bool))
+      |                     ^~~~~~
+10 errors generated.
+make[1]: *** [CMakeFiles/cmTC_37956.dir/build.make:66: CMakeFiles/cmTC_37956.dir/SIZEOF_BOOL.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_37956/fast] Error 2
+
+
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CheckTypeSize/SIZEOF_BOOL.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "sys/types.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(bool))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test TIME_T_UNSIGNED failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23233/fast && /usr/bin/make -f CMakeFiles/cmTC_23233.dir/build.make CMakeFiles/cmTC_23233.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23233.dir/src.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DTIME_T_UNSIGNED   -o CMakeFiles/cmTC_23233.dir/src.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c:5:13: error: 'array' declared as an array with a negative size
+    5 |   int array[(((time_t)-1) > 0) ? 1 : -1];
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_23233.dir/build.make:66: CMakeFiles/cmTC_23233.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_23233/fast] Error 2
+
+
+Source file was:
+
+#include <time.h>
+int main()
+{
+  int array[(((time_t)-1) > 0) ? 1 : -1];
+  return 0;
+}
+Performing C SOURCE FILE Test HAVE_TIMESPEC_TS_SEC failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_42a3a/fast && /usr/bin/make -f CMakeFiles/cmTC_42a3a.dir/build.make CMakeFiles/cmTC_42a3a.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42a3a.dir/src.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DHAVE_TIMESPEC_TS_SEC   -o CMakeFiles/cmTC_42a3a.dir/src.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c:7:11: error: no member named 'ts_sec' in 'struct timespec'; did you mean 'tv_sec'?
+    7 |   abstime.ts_sec = time(NULL)+1;
+      |           ^~~~~~
+      |           tv_sec
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:12:12: note: 'tv_sec' declared here
+   12 |   __time_t tv_sec;              /* Seconds.  */
+      |            ^
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c:8:11: error: no member named 'ts_nsec' in 'struct timespec'; did you mean 'tv_nsec'?
+    8 |   abstime.ts_nsec = 0;
+      |           ^~~~~~~
+      |           tv_nsec
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:16:21: note: 'tv_nsec' declared here
+   16 |   __syscall_slong_t tv_nsec;    /* Nanoseconds.  */
+      |                     ^
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_42a3a.dir/build.make:66: CMakeFiles/cmTC_42a3a.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_42a3a/fast] Error 2
+
+
+Source file was:
+
+#include <pthread.h>
+
+int main(int ac, char **av)
+{
+  struct timespec abstime;
+  abstime.ts_sec = time(NULL)+1;
+  abstime.ts_nsec = 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_SOLARIS_STYLE_GETHOST failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_76d70/fast && /usr/bin/make -f CMakeFiles/cmTC_76d70.dir/build.make CMakeFiles/cmTC_76d70.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_76d70.dir/src.cxx.o
+/usr/bin/clang++  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DHAVE_SOLARIS_STYLE_GETHOST   -o CMakeFiles/cmTC_76d70.dir/src.cxx.o -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.cxx
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.cxx:16:8: error: no matching function for call to 'gethostbyaddr_r'
+   16 |        gethostbyaddr_r((const char *) 0,
+      |        ^~~~~~~~~~~~~~~
+/usr/include/netdb.h:170:12: note: candidate function not viable: requires 8 arguments, but 7 were provided
+  170 | extern int gethostbyaddr_r (const void *__restrict __addr, __socklen_t __len,
+      |            ^                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  171 |                             int __type,
+      |                             ~~~~~~~~~~~
+  172 |                             struct hostent *__restrict __result_buf,
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  173 |                             char *__restrict __buf, size_t __buflen,
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  174 |                             struct hostent **__restrict __result,
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  175 |                             int *__restrict __h_errnop);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_76d70.dir/build.make:66: CMakeFiles/cmTC_76d70.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_76d70/fast] Error 2
+
+
+Source file was:
+
+    #undef inline
+    #if !defined(SCO) && !defined(__osf__) && !defined(_REENTRANT)
+    #define _REENTRANT
+    #endif
+    #include <pthread.h>
+    #include <sys/types.h>
+    #include <sys/socket.h>
+    #include <netinet/in.h>
+    #include <arpa/inet.h>
+    #include <netdb.h>
+    int main()
+    {
+
+       struct hostent *foo =
+       gethostbyaddr_r((const char *) 0,
+          0, 0, (struct hostent *) 0, (char *) NULL,  0, (int *)0);
+       return 0;
+    }
+  
+Determining if the include file netinet/in6.h exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_88b24/fast && /usr/bin/make -f CMakeFiles/cmTC_88b24.dir/build.make CMakeFiles/cmTC_88b24.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88b24.dir/CheckIncludeFile.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field    -o CMakeFiles/cmTC_88b24.dir/CheckIncludeFile.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'netinet/in6.h' file not found
+    1 | #include <netinet/in6.h>
+      |          ^~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_88b24.dir/build.make:66: CMakeFiles/cmTC_88b24.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_88b24/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_SOCKADDR_IN_SIN_LEN failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ae003/fast && /usr/bin/make -f CMakeFiles/cmTC_ae003.dir/build.make CMakeFiles/cmTC_ae003.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae003.dir/src.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DHAVE_SOCKADDR_IN_SIN_LEN   -o CMakeFiles/cmTC_ae003.dir/src.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c:8:43: error: no member named 'sin_len' in 'struct sockaddr_in'
+    8 |   (void)sizeof(((struct sockaddr_in *)0)->sin_len);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ae003.dir/build.make:66: CMakeFiles/cmTC_ae003.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ae003/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in *)0)->sin_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_SOCKADDR_IN6_SIN6_LEN failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81334/fast && /usr/bin/make -f CMakeFiles/cmTC_81334.dir/build.make CMakeFiles/cmTC_81334.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81334.dir/src.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DHAVE_SOCKADDR_IN6_SIN6_LEN   -o CMakeFiles/cmTC_81334.dir/src.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c:8:44: error: no member named 'sin6_len' in 'struct sockaddr_in6'
+    8 |   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_81334.dir/build.make:66: CMakeFiles/cmTC_81334.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_81334/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test STRUCT_DIRENT_HAS_D_NAMLEN failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_302e1/fast && /usr/bin/make -f CMakeFiles/cmTC_302e1.dir/build.make CMakeFiles/cmTC_302e1.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_302e1.dir/src.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DSTRUCT_DIRENT_HAS_D_NAMLEN   -o CMakeFiles/cmTC_302e1.dir/src.c.o   -c /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c
+/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp/src.c:6:38: error: no member named 'd_namlen' in 'struct dirent'; did you mean 'd_name'?
+    6 |   (void)sizeof(((struct dirent *)0)->d_namlen);
+      |                                      ^~~~~~~~
+      |                                      d_name
+/usr/include/x86_64-linux-gnu/bits/dirent.h:33:10: note: 'd_name' declared here
+   33 |     char d_name[256];           /* We must not include limits.h! */
+      |          ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_302e1.dir/build.make:66: CMakeFiles/cmTC_302e1.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_302e1/fast] Error 2
+
+
+Source file was:
+
+#include <dirent.h>
+
+int main()
+{
+  (void)sizeof(((struct dirent *)0)->d_namlen);
+  return 0;
+}
+
+Determining if the function mbscmp exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7e9c1/fast && /usr/bin/make -f CMakeFiles/cmTC_7e9c1.dir/build.make CMakeFiles/cmTC_7e9c1.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e9c1.dir/CheckFunctionExists.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=mbscmp   -o CMakeFiles/cmTC_7e9c1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7e9c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e9c1.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=mbscmp    -rdynamic CMakeFiles/cmTC_7e9c1.dir/CheckFunctionExists.c.o  -o cmTC_7e9c1  -lm -lcrypt -ldl -lpthread 
+/usr/bin/ld: CMakeFiles/cmTC_7e9c1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `mbscmp'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_7e9c1.dir/build.make:87: cmTC_7e9c1] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7e9c1/fast] Error 2
+
+
+
+Determining if the function strvis exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fa5e4/fast && /usr/bin/make -f CMakeFiles/cmTC_fa5e4.dir/build.make CMakeFiles/cmTC_fa5e4.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa5e4.dir/CheckFunctionExists.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strvis   -o CMakeFiles/cmTC_fa5e4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa5e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa5e4.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strvis    -rdynamic CMakeFiles/cmTC_fa5e4.dir/CheckFunctionExists.c.o  -o cmTC_fa5e4 
+/usr/bin/ld: CMakeFiles/cmTC_fa5e4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `strvis'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_fa5e4.dir/build.make:87: cmTC_fa5e4] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fa5e4/fast] Error 2
+
+
+
+Determining if the function strunvis exists failed with the following output:
+Change Dir: /home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0ffde/fast && /usr/bin/make -f CMakeFiles/cmTC_0ffde.dir/build.make CMakeFiles/cmTC_0ffde.dir/build
+make[1]: Entering directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ffde.dir/CheckFunctionExists.c.o
+/usr/bin/clang -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strunvis   -o CMakeFiles/cmTC_0ffde.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0ffde
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ffde.dir/link.txt --verbose=1
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -DCHECK_FUNCTION_EXISTS=strunvis    -rdynamic CMakeFiles/cmTC_0ffde.dir/CheckFunctionExists.c.o  -o cmTC_0ffde 
+/usr/bin/ld: CMakeFiles/cmTC_0ffde.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `strunvis'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_0ffde.dir/build.make:87: cmTC_0ffde] Error 1
+make[1]: Leaving directory '/home/caizhw3/code/mysql-5.6.21/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0ffde/fast] Error 2
+
+
+

@@ -1,0 +1,1 @@
+/usr/bin/clang++   -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  -Wl,--export-dynamic CMakeFiles/mysqltest_embedded.dir/__/__/client/mysqltest.cc.o  -o mysqltest_embedded  -lpthread ../libmysqld.a -lpthread -lm -lcrypt -ldl -laio 

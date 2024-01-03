@@ -1,0 +1,1 @@
+/usr/bin/clang++ -fPIC  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  -shared  -o libdaemon_example.so CMakeFiles/daemon_example.dir/daemon_example.cc.o  -lpthread ../../libservices/libmysqlservices.a -lpthread 

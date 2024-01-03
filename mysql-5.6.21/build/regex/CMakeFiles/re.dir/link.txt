@@ -1,0 +1,1 @@
+/usr/bin/clang  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   CMakeFiles/re.dir/main.c.o CMakeFiles/re.dir/split.c.o CMakeFiles/re.dir/debug.c.o  -o re  -lpthread libregex.a ../strings/libstrings.a ../mysys/libmysys.a ../dbug/libdbug.a ../mysys/libmysys.a ../dbug/libdbug.a ../strings/libstrings.a ../zlib/libzlib.a -lm -lpthread 

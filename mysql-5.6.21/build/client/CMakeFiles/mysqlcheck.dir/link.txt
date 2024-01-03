@@ -1,0 +1,1 @@
+/usr/bin/clang++   -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC   CMakeFiles/mysqlcheck.dir/mysqlcheck.c.o  -o mysqlcheck  -lpthread ../libmysql/libmysqlclient.a -lpthread -lm -ldl 

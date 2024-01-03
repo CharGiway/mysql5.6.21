@@ -1,0 +1,1 @@
+/usr/bin/clang++ -fPIC  -Wall -Wno-null-conversion -Wno-unused-private-field -g -DENABLED_DEBUG_SYNC  -shared  -o udf_example.so CMakeFiles/udf_example.dir/udf_example.cc.o  -lpthread 
